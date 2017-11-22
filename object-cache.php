@@ -336,7 +336,7 @@ class WP_Object_Cache {
 	function flush() {
 
 		// Return true is flushing is disabled
-		if ( ! WP_MEMCACHE_DISABLE_FLUSHING ) {
+		if ( WP_MEMCACHE_DISABLE_FLUSHING ) {
 			return true;
 		}
 
